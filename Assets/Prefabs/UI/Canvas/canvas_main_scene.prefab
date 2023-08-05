@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2805166409653042739, guid: afa098016a22547499ad56946f3bee36, type: 3}
       propertyPath: m_Name
-      value: canvas Variant
+      value: canvas_main_scene
       objectReference: {fileID: 0}
     - target: {fileID: 3493038953078924550, guid: afa098016a22547499ad56946f3bee36, type: 3}
       propertyPath: m_Name
@@ -30,7 +30,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4753186790982738369, guid: afa098016a22547499ad56946f3bee36, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4753186790982738369, guid: afa098016a22547499ad56946f3bee36, type: 3}
       propertyPath: m_AnchorMax.x
@@ -120,7 +120,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4753186790982738369, guid: afa098016a22547499ad56946f3bee36, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 7013662260450282758}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afa098016a22547499ad56946f3bee36, type: 3}
