@@ -12,8 +12,6 @@ public class InputHandler : MonoBehaviour
 
     public void OnClick(InputAction.CallbackContext context)
     {
-        Debug.Log("OnClick");
-
         if (!context.started)
             return;
 
