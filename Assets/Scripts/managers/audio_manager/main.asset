@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8802ce8982e9b9c419022d3ff0065c41, type: 3}
+  m_Name: main
+  m_EditorClassIdentifier: 
+  _ambientMusic: {fileID: 8300000, guid: e4ea8ffab00874f58a757e5ceade1387, type: 3}
+  _chestCollected: {fileID: 8300000, guid: c22e32eeea80f5a4297d22127a3e73ea, type: 3}
+  _torchSwitch: {fileID: 8300000, guid: c368a2ca3da50754e967d9fe861c1c2b, type: 3}
+  _buttonSelected: {fileID: 8300000, guid: f0c8c50d2c12dbd49bb9499eed7e2172, type: 3}
+  _buttonClick: {fileID: 8300000, guid: e24c6d474ccc8c44db24970357fc5142, type: 3}

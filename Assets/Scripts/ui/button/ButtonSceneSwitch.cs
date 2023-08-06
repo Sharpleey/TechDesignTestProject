@@ -24,11 +24,13 @@ public class ButtonSceneSwitch : MonoBehaviour, IPointerEnterHandler, IPointerEx
     private Vector3 _defaultScaleTextButton;
 
     private GameSceneManager _gameSceneManager;
+    private AudioManager _audioManager;
 
     [Inject]
-    private void Construct(GameSceneManager gameSceneManager)
+    private void Construct(GameSceneManager gameSceneManager, AudioManager audioManager)
     {
         _gameSceneManager = gameSceneManager;
+        _audioManager = audioManager;
     }
 
     private void Start()
@@ -43,6 +45,8 @@ public class ButtonSceneSwitch : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
     private void Select()
     {
+        _audioManager?.PlaySound(AudioManager.SoundType.ButtonSelected);
+
         _backgroundButton.DOColor(_colorSellectedButton, 0.15f).SetEase(easeChangeColor);
         _textButton.transform.DOScale(_scaleTextSellectedButton, 0.15f).SetEase(easeScaleText);
         _textButton.DOColor(_colorSellectedTextButton, 0.15f).SetEase(easeChangeColor);
@@ -58,6 +62,8 @@ public class ButtonSceneSwitch : MonoBehaviour, IPointerEnterHandler, IPointerEx
     public void OnPointerClick(PointerEventData eventData)
     {
         Deselect();
+
+        _audioManager?.PlaySound(AudioManager.SoundType.ButtonClick);
 
         _gameSceneManager?.SwitchToScene(_switchScene);
     }
