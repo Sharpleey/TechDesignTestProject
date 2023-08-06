@@ -5,6 +5,8 @@ public class InputHandler : MonoBehaviour
 {
     private Camera _camera;
 
+    private RaycastHit2D _rayHit;
+
     private void Awake()
     {
         _camera = Camera.main;
@@ -15,12 +17,24 @@ public class InputHandler : MonoBehaviour
         if (!context.started)
             return;
 
-        RaycastHit2D rayHit = Physics2D.GetRayIntersection(_camera.ScreenPointToRay(Mouse.current.position.ReadValue()));
+        _rayHit = Physics2D.GetRayIntersection(_camera.ScreenPointToRay(Mouse.current.position.ReadValue()));
 
-        if (!rayHit.collider)
+        if (!_rayHit.collider)
             return;
 
-        if(rayHit.collider.TryGetComponent<TorchSwitch>(out TorchSwitch torchSwitch))
+        CheckClickedOnTorch();
+        CheckClickedOnTreasureChest();
+    }
+
+    private void CheckClickedOnTorch()
+    {
+        if (_rayHit.collider.TryGetComponent(out TorchSwitch torchSwitch))
             torchSwitch.IsEnable = !torchSwitch.IsEnable;
-;    }
+    }
+
+    private void CheckClickedOnTreasureChest()
+    {
+        if (_rayHit.collider.TryGetComponent(out TreasureChest treasureChest))
+            treasureChest.Open();
+    }
 }
