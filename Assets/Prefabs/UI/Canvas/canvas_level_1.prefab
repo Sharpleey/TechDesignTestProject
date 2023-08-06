@@ -92,6 +92,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 497357692928
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:7c25596f62928cc46b671d1bada704e0
+      objectReference: {fileID: 0}
     - target: {fileID: 2824129794805366578, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
       propertyPath: _switchScene
       value: 0

@@ -221,6 +221,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_StringReference.m_TableEntryReference.m_KeyId
+      value: 418206982144
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_StringReference.m_TableReference.m_TableCollectionName
+      value: GUID:7c25596f62928cc46b671d1bada704e0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4316643557668198582}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_text
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TMPro.TMP_Text, Unity.TextMeshPro
+      objectReference: {fileID: 0}
+    - target: {fileID: 1955871124012847273, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+      propertyPath: m_UpdateString.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3278165465231993515, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
       propertyPath: m_Name
       value: button_next_scene
@@ -230,6 +262,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+--- !u!114 &4316643557668198582 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5969183916795904277, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
+  m_PrefabInstance: {fileID: 7579841110736034211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &8346461674988463968 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1938122308716314307, guid: eb2d45ccc34beca4a8116978fb5b491f, type: 3}
